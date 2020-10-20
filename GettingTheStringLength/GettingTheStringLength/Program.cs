@@ -11,9 +11,10 @@ namespace GettingTheStringLength
         static void Main(string[] args)
         {
            // Getting the string length
+            string inputedString = GettingTheInputedString();
 
-            // <~ End of the program
-            Console.ReadLine();
+           // <~ End of the program
+           Console.ReadLine();
         }
         static string GettingTheInputedString()
         {
