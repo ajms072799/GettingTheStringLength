@@ -20,6 +20,7 @@ namespace GettingTheStringLength
            // <~ End of the program
            Console.ReadLine();
         }
+        #region GettingTheStringLength Method
         static string GettingTheInputedString()
         {
             Console.WriteLine("------------------------------------------------------------");
@@ -42,5 +43,6 @@ namespace GettingTheStringLength
             Console.WriteLine("The length of the word " + "\"" + displayingTheStringLength + "\"" + " is " + inputedString);
             Console.WriteLine("------------------------------------------------------------");
         }
+        #endregion
     }
 }
