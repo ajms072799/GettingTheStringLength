@@ -15,14 +15,17 @@ namespace GettingTheStringLength
 
             string displayingTheStringLength = GettingTheLengthOfString(inputedString);
 
-            Console.WriteLine("String Length is " + displayingTheStringLength);
+            DisplayingTheStringLength(inputedString, displayingTheStringLength);
 
            // <~ End of the program
            Console.ReadLine();
         }
         static string GettingTheInputedString()
         {
-            Console.Write("Enter your string: ");
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("\t\tGetting The Length of String");
+            Console.WriteLine("------------------------------------------------------------");
+            Console.Write("Enter a word that you want to know the length: ");
             string inputString = Console.ReadLine();
 
             return inputString;
@@ -32,6 +35,12 @@ namespace GettingTheStringLength
             string getTheLengthOfString = Convert.ToString(inputedString.Length);
 
             return getTheLengthOfString;
+        }
+        static void DisplayingTheStringLength(string displayingTheStringLength, string inputedString)
+        {
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("The length of the word " + "\"" + displayingTheStringLength + "\"" + " is " + inputedString);
+            Console.WriteLine("------------------------------------------------------------");
         }
     }
 }
