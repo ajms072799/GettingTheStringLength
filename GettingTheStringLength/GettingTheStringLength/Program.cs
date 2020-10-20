@@ -13,6 +13,10 @@ namespace GettingTheStringLength
            // Getting the string length
             string inputedString = GettingTheInputedString();
 
+            string displayingTheStringLength = GettingTheLengthOfString(inputedString);
+
+            Console.WriteLine("String Length is " + displayingTheStringLength);
+
            // <~ End of the program
            Console.ReadLine();
         }
@@ -22,6 +26,12 @@ namespace GettingTheStringLength
             string inputString = Console.ReadLine();
 
             return inputString;
+        }
+        static string GettingTheLengthOfString(string inputedString)
+        {
+            string getTheLengthOfString = Convert.ToString(inputedString.Length);
+
+            return getTheLengthOfString;
         }
     }
 }
